@@ -1,0 +1,157 @@
+//phân tích thành phần thẻ HTML 
+//tạo frame cho  web
+//viết HTML
+//style
+//responsive
+//add javasript effect 
+//chình sủa thành anime theme
+//design icon , tìm image
+//public
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Inter', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+li {
+    list-style-type: none;
+}
+
+nav {
+    padding: .625rem 1rem;
+    a{
+        padding-right: 1rem;
+    }
+    box-shadow: 0 0 2px rgba(0,0,0,0.5);
+        .nav__menu {
+            
+            
+            flex-grow: 1;
+            .nav__navbar{
+                .dropdown__toggle{
+                    padding: .3125rem .55rem;
+                    font-size: .9rem;
+                    font-weight: 500;
+                    i{
+                        font-size: .5rem;
+                        padding-left: .5rem;
+                    }
+                }
+                a.ti-more-alt{
+                    font-size: 1rem;
+                    padding: .3125rem .7rem;
+                }
+            }
+            
+            form.search-box {          
+                margin-left: 1rem;
+                position: relative;      
+                button.ti-search {
+                    padding-left:1rem;
+                    position: absolute;
+                    background: transparent;
+                    border: none;
+                    cursor: pointer;
+                }
+                input[type="search"] {
+                    width: 17.5rem;
+                    border: 1px solid #754ffe38;
+                    padding: 1rem 1.25rem;
+                    padding-left:2.5rem;
+                    border-radius:.3125rem;
+                    font-size: .9rem;
+                }
+                input[type="search"]:focus {
+                    outline: 0;
+                    border-color: #754ffe;
+                    box-shadow: 0 0 0 3px rgba(231,225,253,.75);
+                    
+                }
+            }
+            .user{
+                padding: 0.175rem;
+                margin-left: auto;
+                .notification{
+                    position: relative;
+                    a{ 
+                        justify-content:center;
+                        width: 2.5rem;
+                        height: 2.5rem;
+                        background:rgba(219, 219, 219, 0.288);
+                        border-radius: 50%;
+                        border: 1px solid rgba(221, 220, 220, 0.575);
+                        padding:0;
+                        i.ti-bell{
+                            font-size:  .9rem;
+                        transition: all .2s ease-in-out;
+                            color: rgb(148, 148, 148);
+                        }
+                        
+                    }
+                    a::before {
+                        content:"";
+                        width: 0.75rem;
+                        height: 0.75rem;
+                        background-color: #754ffe;
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        border-radius: 50%;
+                        transition: all .2s ease-in-out;
+                        transform:scale(.75);
+                    }
+                    &:hover a::before{
+                        transform:scale(1);
+                        
+                    }
+                    &:hover i.ti-bell{
+                        color: rgb(0, 0, 0);
+                    }
+                }
+                .user-box{
+                    position: relative;
+                    a.avatar{
+                        padding: 0;
+                        cursor:pointer;
+                        &::before{
+                            content:"";
+                            width: 0.75rem;
+                            height: 0.75rem;
+                            background-color: #00d447;
+                            position: absolute;
+                            border: 2px solid #fff;
+                            bottom: 0;
+                            right: 0;
+                            border-radius: 50%;
+                            transition: all .2s ease-in-out;
+                            transform:scale(.75);
+                        }
+                       
+                        img{
+                            width: 2.5rem;
+                            height:2.5rem;
+                        }
+                    }
+                    &:hover a.avatar::before{
+                        
+                        transform:scale(0.875);
+                        
+                    }
+                }
+            }
+        }
+
+}
+.algin-vertical{
+    display: flex;
+    align-items: center;
+}

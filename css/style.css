@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-family: 'Inter', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+li {
+  list-style-type: none;
+}
+
+nav {
+  padding: .625rem 1rem;
+  -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+}
+
+nav a {
+  padding-right: 1rem;
+}
+
+nav .nav__menu {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+nav .nav__menu .nav__navbar .dropdown__toggle {
+  padding: .3125rem .55rem;
+  font-size: .9rem;
+  font-weight: 500;
+}
+
+nav .nav__menu .nav__navbar .dropdown__toggle i {
+  font-size: .5rem;
+  padding-left: .5rem;
+}
+
+nav .nav__menu .nav__navbar a.ti-more-alt {
+  font-size: 1rem;
+  padding: .3125rem .7rem;
+}
+
+nav .nav__menu form.search-box {
+  margin-left: 1rem;
+  position: relative;
+}
+
+nav .nav__menu form.search-box button.ti-search {
+  padding-left: 1rem;
+  position: absolute;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+nav .nav__menu form.search-box input[type="search"] {
+  width: 17.5rem;
+  border: 1px solid #754ffe38;
+  padding: 1rem 1.25rem;
+  padding-left: 2.5rem;
+  border-radius: .3125rem;
+  font-size: .9rem;
+}
+
+nav .nav__menu form.search-box input[type="search"]:focus {
+  outline: 0;
+  border-color: #754ffe;
+  -webkit-box-shadow: 0 0 0 3px rgba(231, 225, 253, 0.75);
+          box-shadow: 0 0 0 3px rgba(231, 225, 253, 0.75);
+}
+
+nav .nav__menu .user {
+  padding: 0.175rem;
+  margin-left: auto;
+}
+
+nav .nav__menu .user .notification {
+  position: relative;
+}
+
+nav .nav__menu .user .notification a {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: rgba(219, 219, 219, 0.288);
+  border-radius: 50%;
+  border: 1px solid rgba(221, 220, 220, 0.575);
+  padding: 0;
+}
+
+nav .nav__menu .user .notification a i.ti-bell {
+  font-size: .9rem;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  color: #949494;
+}
+
+nav .nav__menu .user .notification a::before {
+  content: "";
+  width: 0.75rem;
+  height: 0.75rem;
+  background-color: #754ffe;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 50%;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  -webkit-transform: scale(0.75);
+          transform: scale(0.75);
+}
+
+nav .nav__menu .user .notification:hover a::before {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+nav .nav__menu .user .notification:hover i.ti-bell {
+  color: black;
+}
+
+nav .nav__menu .user .user-box {
+  position: relative;
+}
+
+nav .nav__menu .user .user-box a.avatar {
+  padding: 0;
+  cursor: pointer;
+}
+
+nav .nav__menu .user .user-box a.avatar::before {
+  content: "";
+  width: 0.75rem;
+  height: 0.75rem;
+  background-color: #00d447;
+  position: absolute;
+  border: 2px solid #fff;
+  bottom: 0;
+  right: 0;
+  border-radius: 50%;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  -webkit-transform: scale(0.75);
+          transform: scale(0.75);
+}
+
+nav .nav__menu .user .user-box a.avatar img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+nav .nav__menu .user .user-box:hover a.avatar::before {
+  -webkit-transform: scale(0.875);
+          transform: scale(0.875);
+}
+
+.algin-vertical {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=style.css.map */
