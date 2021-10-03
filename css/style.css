@@ -5,6 +5,10 @@
           box-sizing: border-box;
 }
 
+body {
+  background-color: #f5f4f8;
+}
+
 html {
   font-family: 'Inter', sans-serif;
 }
@@ -19,13 +23,16 @@ li {
 }
 
 nav {
+  background: #fff;
   padding: .625rem 1rem;
-  -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
-          box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
 }
 
 nav a {
   padding-right: 1rem;
+}
+
+nav a:hover {
+  color: #5e3fcb;
 }
 
 nav .nav__menu {
@@ -34,20 +41,31 @@ nav .nav__menu {
           flex-grow: 1;
 }
 
-nav .nav__menu .nav__navbar .dropdown__toggle {
+nav .nav__menu .nav__navbar .dropdown__menu {
+  position: relative;
+}
+
+nav .nav__menu .nav__navbar .dropdown__menu .dropdown__toggle {
   padding: .3125rem .55rem;
   font-size: .9rem;
   font-weight: 500;
 }
 
-nav .nav__menu .nav__navbar .dropdown__toggle i {
+nav .nav__menu .nav__navbar .dropdown__menu .dropdown__toggle i {
   font-size: .5rem;
   padding-left: .5rem;
 }
 
-nav .nav__menu .nav__navbar a.ti-more-alt {
+nav .nav__menu .nav__navbar .dropdown__menu a.ti-more-alt {
   font-size: 1rem;
   padding: .3125rem .7rem;
+}
+
+nav .nav__menu .nav__navbar .dropdown__menu:hover > .drop__containers {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
 }
 
 nav .nav__menu form.search-box {
@@ -66,7 +84,7 @@ nav .nav__menu form.search-box button.ti-search {
 nav .nav__menu form.search-box input[type="search"] {
   width: 17.5rem;
   border: 1px solid #754ffe38;
-  padding: 1rem 1.25rem;
+  padding: .875rem 1.25rem;
   padding-left: 2.5rem;
   border-radius: .3125rem;
   font-size: .9rem;
@@ -173,5 +191,136 @@ nav .nav__menu .user .user-box:hover a.avatar::before {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.drop__containers {
+  visibility: hidden;
+  opacity: 0;
+  min-width: 12rem;
+  margin: .725rem 0;
+  padding: 1rem 0;
+  border-radius: .875rem;
+  position: absolute;
+  background: #ffffff;
+  -webkit-transition: all 0.275s ease-in-out !important;
+  transition: all 0.275s ease-in-out !important;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+  -webkit-box-shadow: 0 0 30px -10px rgba(51, 51, 51, 0.144);
+          box-shadow: 0 0 30px -10px rgba(51, 51, 51, 0.144);
+}
+
+.drop__containers .sub-toggle {
+  -webkit-transition: all 0.25s ease-in-out !important;
+  transition: all 0.25s ease-in-out !important;
+}
+
+.drop__containers li.sub-toggle:hover > ul.drop__containers {
+  visibility: visible !important;
+  opacity: 1 !important;
+  -webkit-transform: scaleY(1) !important;
+          transform: scaleY(1) !important;
+}
+
+.drop__containers li.drop-item {
+  position: relative;
+}
+
+.drop__containers li.drop-item a {
+  position: relative;
+  font-size: .875rem;
+  font-weight: inherit;
+  line-height: 28px;
+  display: block;
+  padding: .125rem 1.2rem;
+}
+
+.drop__containers li.drop-item a i {
+  font-size: 0.6rem;
+  position: absolute;
+  right: 0;
+  line-height: 28px;
+  padding: .125rem 1.2rem;
+}
+
+.drop__containers li.drop-item .drop-item:hover {
+  background: #fff;
+}
+
+.drop__containers .drop-list {
+  line-height: 1.55;
+  min-width: 17rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: .75rem 1.25rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.drop__containers .drop-list i {
+  color: #754ffe;
+}
+
+.drop__containers .drop-list div.list-content {
+  margin-left: 1rem;
+}
+
+.drop__containers .drop-list div.list-content .text-header {
+  font-size: .875rem;
+  font-weight: 500;
+}
+
+.drop__containers .drop-list div.list-content .text-header span {
+  color: #754ffe;
+}
+
+.drop__containers .drop-list div.list-content p {
+  font-size: .75rem;
+}
+
+.drop__containers hr {
+  margin: 1rem;
+  color: #ecebf1;
+  opacity: 0.4;
+}
+
+.drop__containers li.drop-header a {
+  color: #a8a3b9;
+  cursor: default;
+  text-transform: uppercase;
+  font-size: .75rem;
+}
+
+.sub {
+  top: -50%;
+  left: 100%;
+  visibility: hidden !important;
+  opacity: 0;
+}
+
+.text__wrapper {
+  padding: .125rem 1.2rem;
+}
+
+.text__wrapper h5 {
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-size: .725rem;
+  margin-bottom: 1rem;
+}
+
+.text__wrapper p {
+  font-size: .75rem;
+  color: #a8a3b9;
+}
+
+.button {
+  text-align: center;
+  background: #754ffe;
+  border: 1px solid #754ffe;
+  border-radius: 5%;
+  color: #fff;
 }
 /*# sourceMappingURL=style.css.map */
