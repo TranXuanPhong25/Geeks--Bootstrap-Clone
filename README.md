@@ -6,4 +6,4 @@ However, i make this without boostrap .
 
 I changed something in project what unrelated to origin .
 
-view here : https://tranxuanphong25.github.io/AniWatch/
+view here : https://tranxuanphong25.github.io/Geeks--Boostrap-Clone/
