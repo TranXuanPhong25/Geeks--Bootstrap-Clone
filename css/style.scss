@@ -14,13 +14,14 @@
 }
 
 @mixin drop__down {
+    z-index: 5;
     visibility: hidden;
     opacity: 0;
     margin: .725rem 0;
     padding: 1rem 0;
     border-radius: .875rem;
     position: absolute;
-    background: #ffffff;
+    background: #ffffff!important;
     transition: all .275s ease-in-out !important;
     transform: translateY(20px);
     box-shadow: 0 0 30px -10px rgba(51, 51, 51, 0.144);
@@ -48,6 +49,10 @@ li {
 }
 
 nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
     background: #fff;
     padding: .625rem 1rem;
 
@@ -62,7 +67,10 @@ nav {
     .nav__menu {
         flex-grow: 1;
 
+
         .dropdown__menu {
+
+
             position: relative;
 
             .dropdown__toggle {
@@ -94,11 +102,12 @@ nav {
             position: relative;
 
             button.ti-search {
-                padding-left: 1rem;
+                padding-left:1rem;
                 position: absolute;
                 background: transparent;
                 border: none;
                 cursor: pointer;
+                
             }
 
             input[type="search"] {
@@ -119,6 +128,10 @@ nav {
         }
 
         .user {
+            img {
+                border-radius: 50%;
+            }
+
             padding: 0.175rem;
             margin-left: auto;
 
@@ -368,7 +381,7 @@ nav {
 .drop__containers {
     @include drop__down();
     min-width: 12rem;
-
+    z-index: 1;
     li:not(li.drop-header):hover {
         color: #5e3fcb;
         background: #9477fc27;
@@ -384,6 +397,8 @@ nav {
     }
 
     .drop-item {
+    z-index: 3;
+
         position: relative;
 
         a {
@@ -467,6 +482,7 @@ nav {
     left: 100%;
     visibility: hidden !important;
     opacity: 0;
+    z-index: 5;
 
 }
 
@@ -491,12 +507,14 @@ nav {
     display: flex;
     align-items: center;
     flex-direction: row-reverse;
+
     h5 {
         font-size: 1rem;
         font-weight: 400;
         letter-spacing: 1px;
         text-align: right;
     }
+
     p {
         font-size: .85rem;
         color: rgb(98, 98, 98);
@@ -531,4 +549,50 @@ a.button:active {
 
 .pad-bot {
     padding-bottom: 1rem !important;
+}
+.nav__toggle {
+    position: absolute;
+    right: 1rem;
+    min-width: 40px;
+    min-height: 40px;
+    padding: 0.25rem;
+    background: transparent;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    cursor: pointer;
+    border: 1px solid #754ffe;
+    
+    border-radius: 12.5%;
+
+    .stick {
+        width: 28px;
+        height: 4px;
+        background: #754ffe;
+        margin: 0.125rem;
+        transition: all .225s ease-in-out;
+    }
+    
+
+}
+.r-45{
+        position: absolute;
+        transform: rotate(-45deg) ;
+}
+.hide{
+    opacity: 0;
+    visibility:hidden;
+}
+.r45{
+        position: absolute;
+        transform: rotate(45deg);
+}
+.appearance{
+    @include appearance();
+}
+.drop__down{
+    @include drop__down();
 }

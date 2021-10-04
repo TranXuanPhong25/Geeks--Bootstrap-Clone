@@ -12,20 +12,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-    <title>AniWatch</title>
+    <title>Geeks boostrap</title>
 </head>
 
 <body>
     <nav>
         <div class="algin-vertical">
             <a class="nav__logo">
-                <img src="https://codescandy.com/geeks-bootstrap-5/assets/images/brand/logo/logo.svg" alt="">
+                <img src="https://codescandy.com/geeks-bootstrap-5/assets/images/brand/logo/logo.svg" draggable="false" alt="">
             </a>
-            <button type="button" class="nav__toggle ti-arrows-corner">
-                <span class="stick"></span>
-                <span class="stick"></span>
-                <span class="stick"></span>
-            </button>
+            
+            
             <div class="nav__menu algin-vertical">
                 <!-- main vavigation bar -->
                 <ul class="nav__navbar algin-vertical">
@@ -533,7 +530,7 @@
                             <img src="https://ae01.alicdn.com/kf/HTB1GvGqXND1gK0jSZFyq6AiOVXaG/KonoSuba-God-s-Blessing-on-this-Wonderful-World-Anime-Badge-Aqua-Darkness-Megumin-Yunyun-Hot-Spring.jpg_640x640.jpg" alt="">
                         </a>
                         
-                            <ul class="drop__containers">
+                            <ul class="drop__containers" id="user-drop">
                                 <li class="drop-item user--header">
                                     <a href="#" class="algin-vertical">
                                         <img src="https://ae01.alicdn.com/kf/HTB1GvGqXND1gK0jSZFyq6AiOVXaG/KonoSuba-God-s-Blessing-on-this-Wonderful-World-Anime-Badge-Aqua-Darkness-Megumin-Yunyun-Hot-Spring.jpg_640x640.jpg" width ="40" height ="40" style=" border-radius: 50%;display: block;position: relative;" alt="avatar">
@@ -541,7 +538,6 @@
                                     <span>
                                         <h5>Name</h5>
                                         <p>boostrap5@gmail.com</p>
-    
                                     </span>
                                 </li>
                                 <hr>
@@ -567,11 +563,17 @@
                     </li>
                 </ul>
             </div>
+            <button href="#" class="nav__toggle ">
+                <span class="stick" data="1"></span>
+                <span class="stick" data="2"></span>
+                <span class="stick" data="3"></span>
+            </button>
         </div>
     </nav>
     <main>
 
     </main>
+    <script src="./js/navigation-handler.js"></script>
     <script src="./js/notifications-date.js"></script>
 </body>
 
