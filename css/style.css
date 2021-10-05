@@ -32,10 +32,6 @@ nav a {
   padding-right: 1rem;
 }
 
-nav a:not(.drop-header):hover {
-  color: #5e3fcb;
-}
-
 nav .nav__menu {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
@@ -60,13 +56,6 @@ nav .nav__menu .dropdown__menu .dropdown__toggle i {
 nav .nav__menu .dropdown__menu a.ti-more-alt {
   font-size: 1rem;
   padding: .3125rem .7rem;
-}
-
-nav .nav__menu .dropdown__menu:hover > .drop__containers {
-  visibility: visible !important;
-  opacity: 1 !important;
-  -webkit-transform: scaleY(1) !important;
-          transform: scaleY(1) !important;
 }
 
 nav .nav__menu form.search-box {
@@ -112,13 +101,6 @@ nav .nav__menu .user .notification {
   position: relative;
 }
 
-nav .nav__menu .user .notification:hover > .notification__container {
-  visibility: visible !important;
-  opacity: 1 !important;
-  -webkit-transform: scaleY(1) !important;
-          transform: scaleY(1) !important;
-}
-
 nav .nav__menu .user .notification .notification__container {
   right: 0;
   min-width: 22rem;
@@ -162,14 +144,6 @@ nav .nav__menu .user .notification .notification__container .notify_header i {
           transform: scale(1);
   -webkit-transform: rotate(0.5turn);
           transform: rotate(0.5turn);
-}
-
-nav .nav__menu .user .notification .notification__container .notify_header i:hover {
-  opacity: 1;
-  -webkit-transform: rotate(5turn);
-          transform: rotate(5turn);
-  -webkit-transform: scale(1.4);
-          transform: scale(1.4);
 }
 
 nav .nav__menu .user .notification .notification__container .notify-content {
@@ -247,11 +221,6 @@ nav .nav__menu .user .notification .notification__container .notify-content .not
   display: block;
 }
 
-nav .nav__menu .user .notification .notification__container .notify-content .notify--detail .status-remove span.status:hover {
-  -webkit-transform: scale(1);
-          transform: scale(1);
-}
-
 nav .nav__menu .user .notification .notification__container .notify-content .notify--detail .status-remove i {
   font-size: .55rem;
   display: block;
@@ -262,13 +231,6 @@ nav .nav__menu .user .notification .notification__container .notify-content .not
   -webkit-transform: rotate(0turn);
           transform: rotate(0turn);
   cursor: pointer;
-}
-
-nav .nav__menu .user .notification .notification__container .notify-content .notify--detail .status-remove i:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-  -webkit-transform: rotate(1turn);
-          transform: rotate(1turn);
 }
 
 nav .nav__menu .user .notification a {
@@ -305,15 +267,6 @@ nav .nav__menu .user .notification a::before {
           transform: scale(0.75);
 }
 
-nav .nav__menu .user .notification:hover a::before {
-  -webkit-transform: scale(1);
-          transform: scale(1);
-}
-
-nav .nav__menu .user .notification:hover i.ti-bell {
-  color: black;
-}
-
 nav .nav__menu .user .user-box {
   position: relative;
 }
@@ -342,11 +295,6 @@ nav .nav__menu .user .user-box a.avatar::before {
 nav .nav__menu .user .user-box a.avatar img {
   width: 2.5rem;
   height: 2.5rem;
-}
-
-nav .nav__menu .user .user-box:hover a.avatar::before {
-  -webkit-transform: scale(0.875);
-          transform: scale(0.875);
 }
 
 nav .nav__menu .user .user-box ul {
@@ -406,21 +354,9 @@ nav .nav__menu .user .user-box ul > li:not(.user--header) i {
   z-index: 1;
 }
 
-.drop__containers li:not(li.drop-header):hover {
-  color: #5e3fcb;
-  background: #9477fc27;
-}
-
 .drop__containers .sub-toggle {
   -webkit-transition: all .25s ease-in-out !important;
   transition: all .25s ease-in-out !important;
-}
-
-.drop__containers li.sub-toggle:hover > ul.drop__containers {
-  visibility: visible !important;
-  opacity: 1 !important;
-  -webkit-transform: scaleY(1) !important;
-          transform: scaleY(1) !important;
 }
 
 .drop__containers .drop-item {
@@ -445,10 +381,6 @@ nav .nav__menu .user .user-box ul > li:not(.user--header) i {
   padding: .125rem 1.2rem;
 }
 
-.drop__containers .drop-item .drop-item:hover {
-  background: #fff;
-}
-
 .drop__containers .drop-list {
   line-height: 1.55;
   min-width: 17rem;
@@ -459,12 +391,6 @@ nav .nav__menu .user .user-box ul > li:not(.user--header) i {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.drop__containers .drop-list:hover {
-  background: #9477fc27;
-  cursor: pointer;
-  color: #4815ff;
 }
 
 .drop__containers .drop-list i {
@@ -559,10 +485,6 @@ nav .nav__menu .user .user-box ul > li:not(.user--header) i {
   color: #fff;
   -webkit-transition: all .1s ease-in;
   transition: all .1s ease-in;
-}
-
-a.button:hover {
-  background: #e5ddfc8f;
 }
 
 a.button:active {
