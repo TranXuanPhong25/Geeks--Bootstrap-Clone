@@ -78,13 +78,13 @@
             
         }
     }
-    .hidden{
-        display: none;
-    }
     .active{
-        display: flex!important;
+        display: block!important;
         opacity: 1;
         visibility: visible;
+    }
+    .hidden{
+        display: none!important;
     }
 
 

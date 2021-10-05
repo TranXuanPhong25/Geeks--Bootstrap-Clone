@@ -10,14 +10,16 @@
     const avatar = document.querySelector('.avatar')
     avatar.onclick = () => {
         user_drop.classList.toggle('hidden')
+        user_drop.classList.toggle('active')
     }
 
     const notify = document.querySelector('#notification')
     const notification = document.querySelector('.notification__container')
     notify.onclick = () => {
         notification.classList.toggle('hidden')
+        notification.classList.toggle('active')
     }
-    
+
     b.onclick = function () {
         s1.classList.toggle('r45')
         s2.classList.toggle('hide')

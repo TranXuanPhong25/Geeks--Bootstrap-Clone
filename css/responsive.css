@@ -68,15 +68,13 @@
     position: absolute;
     right: .25rem;
   }
-  .hidden {
-    display: none;
-  }
   .active {
-    display: -webkit-box !important;
-    display: -ms-flexbox !important;
-    display: flex !important;
+    display: block !important;
     opacity: 1;
     visibility: visible;
+  }
+  .hidden {
+    display: none !important;
   }
 }
 
