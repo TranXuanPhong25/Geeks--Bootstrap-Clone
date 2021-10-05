@@ -113,6 +113,9 @@
     width: 100vw !important;
     right: -109px !important;
   }
+  .drop-list {
+    min-width: 11rem !important;
+  }
 }
 
 @media screen and (max-width: 380px) {
