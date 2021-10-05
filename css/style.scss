@@ -136,6 +136,8 @@ nav {
             margin-left: auto;
 
             .notification {
+            margin-right   :1rem;
+
                 position: relative;
 
                 &:hover>.notification__container {
@@ -552,7 +554,7 @@ a.button:active {
 }
 .nav__toggle {
     position: absolute;
-    right: 1rem;
+    right: 0.5rem;
     min-width: 40px;
     min-height: 40px;
     padding: 0.25rem;

@@ -9,14 +9,15 @@
     .user{
         position: absolute;
         right: 3rem;
-        margin-right: 1rem;
+        margin-right: 0.5rem;
         
 
     }
     
     .notification__container{
-        
-        right: -110px!important;
+        min-width: none!important;
+        width: 100vw!important;
+        right: -100px!important;
     }
     #user-drop{
         right: -50px!important;
@@ -35,6 +36,7 @@
         }
     }
     .nav__navbar{
+
         padding: 1rem 0.75rem;
         position: fixed;
         right: 60%;
@@ -42,8 +44,8 @@
         bottom: 0;
         top: 53px;
         flex-direction:column;
-        align-items: flex-start;
         background: #fff;
+        transition: all .5s ease-in-out;
         &>li{
            
             width: 100%;
@@ -51,13 +53,19 @@
             border-bottom: 2px solid #754ffe31!important;
 
         }
+        // display: none;
+        // opacity: 0;
+        // visibility: hidden;
     }
-    
+    .notification{
+        margin-right: .5rem!important;
+    }
     .drop__containers:not(#user-drop){
-        top: 0;
-        left: 45%;
+        top: 60%;
+        left: 0%;
     }
     .sub{
+        min-width: 8rem!important;
         left: 100%!important;
     }
     a.dropdown__toggle{
@@ -70,10 +78,23 @@
             
         }
     }
+    .hidden{
+        display: none;
+    }
+    .active{
+        display: flex!important;
+        opacity: 1;
+        visibility: visible;
+    }
 
 
 
 }
 @media screen and (max-width:640px){
+    nav {
+        padding: 0.625rem 0.5rem; 
+    }
+}
+@media screen and (max-width:380px){
 
 }
