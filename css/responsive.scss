@@ -61,12 +61,10 @@
         margin-right: .5rem!important;
     }
     .drop__containers:not(#user-drop){
-        top: 60%;
-        left: 0%;
-    }
-    .sub{
-        min-width: 8rem!important;
-        left: 100%!important;
+        min-width: 11rem!important;
+        position: fixed;
+        top: 50px;
+        left:40%;
     }
     a.dropdown__toggle{
         position: relative;
@@ -77,6 +75,15 @@
             right: .25rem;
             
         }
+    }
+    .sub{
+        
+        max-width: 1rem!important;
+        position: fixed!important;
+        top: 0px!important;
+        left: -11rem!important;
+
+        
     }
     .active{
         display: block!important;

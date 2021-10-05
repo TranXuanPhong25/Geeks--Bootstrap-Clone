@@ -4,7 +4,6 @@
     const s3 = document.querySelector('span[data="3"]')
     const b = document.querySelector('.nav__toggle')
     const nav__navbar = document.querySelector('.nav__navbar')
-    const drop__conatiners = document.querySelectorAll('.drop__conatiners')
     
     const user_drop = document.querySelector('#user-drop ')
     const avatar = document.querySelector('.avatar')
@@ -26,5 +25,20 @@
         s3.classList.toggle('r-45')
         nav__navbar.classList.toggle('hidden')
     }
+
+    const dropdown__toggle = document.querySelectorAll('.dropdown__toggle')
+    dropdown__toggle.forEach(x=>x.onclick = function () {
+        const drop__containers = x.nextElementSibling
+        
+        drop__containers.classList.toggle('hidden')
+
+    })
+    const sub__toggle = document.querySelectorAll('.sub-toggle')
+    sub__toggle.forEach(x=>x.onclick=()=>{
+        const drop__containers = x.firstElementChild
+        
+        drop__containers.nextElementSibling.classList.toggle('hidden')
+
+    })
 
 })()
