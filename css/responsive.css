@@ -5,70 +5,6 @@
   button#-submit {
     display: none !important;
   }
-  nav a:not(.drop-header):hover {
-    color: #5e3fcb;
-  }
-  .dropdown__menu:hover > .drop__containers {
-    visibility: visible !important;
-    opacity: 1 !important;
-    -webkit-transform: scaleY(1) !important;
-            transform: scaleY(1) !important;
-  }
-  .notification:hover > .notification__container {
-    visibility: visible !important;
-    opacity: 1 !important;
-    -webkit-transform: scaleY(1) !important;
-            transform: scaleY(1) !important;
-  }
-  .notify_header i:hover {
-    opacity: 1;
-    -webkit-transform: rotate(5turn);
-            transform: rotate(5turn);
-    -webkit-transform: scale(1.4);
-            transform: scale(1.4);
-  }
-  .status-remove span.status:hover {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  .status-remove i:hover {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
-    -webkit-transform: rotate(1turn);
-            transform: rotate(1turn);
-  }
-  .notification:hover a::before {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  .notification:hover i.ti-bell {
-    color: black;
-  }
-  .user-box:hover a.avatar::before {
-    -webkit-transform: scale(0.875);
-            transform: scale(0.875);
-  }
-  .drop__containers li:not(li.drop-header):hover {
-    color: #5e3fcb;
-    background: #9477fc27;
-  }
-  .drop__containers li.sub-toggle:hover > ul.drop__containers {
-    visibility: visible !important;
-    opacity: 1 !important;
-    -webkit-transform: scaleY(1) !important;
-            transform: scaleY(1) !important;
-  }
-  .drop__containers .drop-item .drop-item:hover {
-    background: #fff;
-  }
-  .drop__containers .drop-list:hover {
-    background: #9477fc27;
-    cursor: pointer;
-    color: #4815ff;
-  }
-  a.button:hover {
-    background: #e5ddfc8f;
-  }
 }
 
 @media screen and (max-width: 991px) {
@@ -161,8 +97,8 @@
   }
   .active {
     display: block !important;
-    opacity: 1 !important;
-    visibility: visible !important;
+    opacity: 1;
+    visibility: visible;
   }
   .hidden {
     display: none !important;
