@@ -1,3 +1,11 @@
+@mixin appearance {
+    //hover drop down menu effect
+    visibility: visible !important;
+    opacity: 1 !important;
+    transform: scaleY(1) !important;
+
+}
+
 @media screen and (min-width:992px) {
     button.nav__toggle {
         display: none;
@@ -7,6 +15,106 @@
         display: none !important;
     }
 
+    //1
+    nav {
+        a:not(.drop-header):hover {
+            color: #5e3fcb;
+        }
+    }
+
+    //2
+    .dropdown__menu {
+
+        &:hover>.drop__containers {
+            @include appearance();
+        }
+    }
+
+    //3
+    .notification {
+        &:hover>.notification__container {
+            @include appearance();
+        }
+    }
+
+    //4
+    .notify_header {
+        i {
+            &:hover {
+                opacity: 1;
+                transform: rotate(5turn);
+                transform: scale(1.4);
+            }
+        }
+    }
+
+    //5,6
+    .status-remove {
+        span.status {
+
+            &:hover {
+                transform: scale(1);
+            }
+        }
+
+        i:hover {
+            transform: scale(1.2);
+            transform: rotate(1turn);
+        }
+    }
+
+    //7,8
+    .notification {
+        &:hover a::before {
+            transform: scale(1);
+
+        }
+
+        &:hover i.ti-bell {
+            color: rgb(0, 0, 0);
+        }
+    }
+
+    //9
+    .user-box {
+        &:hover a.avatar::before {
+
+            transform: scale(0.875);
+
+        }
+    }
+
+    //10
+    .drop__containers {
+        li:not(li.drop-header):hover {
+            color: #5e3fcb;
+            background: #9477fc27;
+
+        }
+
+        li.sub-toggle:hover>ul.drop__containers {
+            @include appearance();
+        }
+
+        .drop-item {
+            .drop-item:hover {
+                background: #fff;
+            }
+        }
+
+        .drop-list {
+            &:hover {
+                background: #9477fc27;
+                cursor: pointer;
+                color: #4815ff;
+            }
+        }
+    }
+
+    a.button:hover {
+
+        background: #e5ddfc8f;
+    }
 }
 
 @media screen and (max-width:991px) {
@@ -114,7 +222,7 @@
     }
 
     .sub {
-
+        max-width: 8rem !important;
         text-align: right;
         position: fixed !important;
         top: 0px !important;
@@ -125,16 +233,20 @@
 
     .active {
         display: block !important;
-        opacity: 1;
-        visibility: visible;
+        opacity: 1!important;
+        visibility: visible!important;
     }
 
     .hidden {
         display: none !important;
     }
+    
 
+    // *{
+    //     &:hover {
 
-
+    //     }
+    // }
 }
 
 @media screen and (max-width:550px) {
@@ -147,8 +259,9 @@
         width: 100vw !important;
         right: -109px !important;
     }
-    .drop-list{
-        min-width: 11rem!important;
+
+    .drop-list {
+        min-width: 11rem !important;
     }
 }
 

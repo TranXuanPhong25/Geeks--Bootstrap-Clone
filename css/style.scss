@@ -1,4 +1,5 @@
 //read me ! Never try to read my file bc it 's too messy  . I try to make this after learn some html tag and unrelated , basic Css code
+@import 'stylesection';
 * {
     margin: 0;
     padding: 0;
@@ -56,10 +57,10 @@ nav {
     a {
         padding-right: 1rem;
     }
-
-    a:not(.drop-header):hover {
-        color: #5e3fcb;
-    }
+    
+    // a:not(.drop-header):hover {
+    //     color: #5e3fcb;
+    // }
 
     .nav__menu {
         flex-grow: 1;
@@ -80,9 +81,9 @@ nav {
                 padding: .3125rem .7rem;
             }
 
-            &:hover>.drop__containers {
-                @include appearance();
-            }
+            // &:hover>.drop__containers {
+            //     @include appearance();
+            // }
         }
 
         form.search-box {
@@ -128,9 +129,9 @@ nav {
 
                 position: relative;
 
-                &:hover>.notification__container {
-                    @include appearance();
-                }
+                // &:hover>.notification__container {
+                //     @include appearance();
+                // }
 
                 .notification__container {
                     right: 0;
@@ -155,11 +156,11 @@ nav {
 
                             transform: rotate(0.5turn);
 
-                            &:hover {
-                                opacity: 1;
-                                transform: rotate(5turn);
-                                transform: scale(1.4);
-                            }
+                            // &:hover {
+                            //     opacity: 1;
+                            //     transform: rotate(5turn);
+                            //     transform: scale(1.4);
+                            // }
                         }
                     }
 
@@ -229,9 +230,9 @@ nav {
                                     cursor: pointer;
                                     display: block;
 
-                                    &:hover {
-                                        transform: scale(1);
-                                    }
+                                    // &:hover {
+                                    //     transform: scale(1);
+                                    // }
                                 }
 
                                 i {
@@ -243,10 +244,10 @@ nav {
                                     cursor: pointer;
                                 }
 
-                                i:hover {
-                                    transform: scale(1.2);
-                                    transform: rotate(1turn);
-                                }
+                                // i:hover {
+                                //     transform: scale(1.2);
+                                //     transform: rotate(1turn);
+                                // }
                             }
                         }
                     }
@@ -282,14 +283,14 @@ nav {
                     transform: scale(.75);
                 }
 
-                &:hover a::before {
-                    transform: scale(1);
+                // &:hover a::before {
+                //     transform: scale(1);
 
-                }
+                // }
 
-                &:hover i.ti-bell {
-                    color: rgb(0, 0, 0);
-                }
+                // &:hover i.ti-bell {
+                //     color: rgb(0, 0, 0);
+                // }
 
             }
 
@@ -320,11 +321,11 @@ nav {
                     }
                 }
 
-                &:hover a.avatar::before {
+                // &:hover a.avatar::before {
 
-                    transform: scale(0.875);
+                //     transform: scale(0.875);
 
-                }
+                // }
 
                 ul {
                     position: absolute;
@@ -367,19 +368,19 @@ nav {
     min-width: 12rem;
     z-index: 1;
 
-    li:not(li.drop-header):hover {
-        color: #5e3fcb;
-        background: #9477fc27;
+    // li:not(li.drop-header):hover {
+    //     color: #5e3fcb;
+    //     background: #9477fc27;
 
-    }
+    // }
 
     .sub-toggle {
         transition: all .25s ease-in-out !important;
     }
 
-    li.sub-toggle:hover>ul.drop__containers {
-        @include appearance();
-    }
+    // li.sub-toggle:hover>ul.drop__containers {
+    //     @include appearance();
+    // }
 
     .drop-item {
         z-index: 3;
@@ -403,9 +404,9 @@ nav {
             }
         }
 
-        .drop-item:hover {
-            background: #fff;
-        }
+        // .drop-item:hover {
+        //     background: #fff;
+        // }
     }
 
     .drop-list {
@@ -416,11 +417,11 @@ nav {
         padding: .75rem 1.25rem;
         align-items: center;
 
-        &:hover {
-            background: #9477fc27;
-            cursor: pointer;
-            color: #4815ff;
-        }
+        // &:hover {
+        //     background: #9477fc27;
+        //     cursor: pointer;
+        //     color: #4815ff;
+        // }
 
         i {
             color: #754ffe;
@@ -521,10 +522,10 @@ nav {
 }
 
 
-a.button:hover {
+// a.button:hover {
 
-    background: #e5ddfc8f;
-}
+//     background: #e5ddfc8f;
+// }
 
 a.button:active {
 
