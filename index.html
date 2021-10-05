@@ -422,8 +422,10 @@
                 </ul>
                 <!-- search box -->
                 <form class="search-box algin-vertical">
-                    <button type="submit" class="ti-search"></button>
-                    <input type="search" name="search-box" id="search-box" placeholder="Search" required>
+                    <button type="button" class="ti-search" id="b-toggle"></button>
+                    <input type="search" name="search-box" id="search-box" class="hidden" placeholder="Search" required>
+                    <button type="submit" class="ti-search hidden" id="b-submit"></button>
+
                 </form>
                 <!-- user and notification -->
                 <ul class="user algin-vertical">
@@ -445,7 +447,7 @@
                                         </div>
                                         <div class="idunno">
                                             <h5>Kristin watson</h5>
-                                            <p>The scroll bar doesn't work on firefox and i haven't learn jquery yet</p>
+                                            <p>The scroll bar doesn't work on firefox and i haven't learn jquery yet.You can see Jquery at the end of index.html but i use it only for get window's wide</p>
                                             <span class="span--text__wrapper"   >
                                                 <i class="ti-face-sad"></i>
                                                 <span>Above 69 second</span>
@@ -570,8 +572,9 @@
         </div>
     </nav>
     <main>
-test
+
     </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./js/navigation-handler.js"></script>
     <script src="./js/notifications-date.js"></script>
 </body>

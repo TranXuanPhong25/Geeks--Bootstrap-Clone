@@ -74,7 +74,7 @@ nav .nav__menu form.search-box {
   position: relative;
 }
 
-nav .nav__menu form.search-box button.ti-search {
+nav .nav__menu form.search-box button#b-toggle {
   padding-left: 1rem;
   position: absolute;
   background: transparent;
@@ -84,7 +84,7 @@ nav .nav__menu form.search-box button.ti-search {
 
 nav .nav__menu form.search-box input[type="search"] {
   width: 17.5rem;
-  border: 1px solid #754ffe38;
+  border: 1px solid #754ffe9d;
   padding: .875rem 1.25rem;
   padding-left: 2.5rem;
   border-radius: .3125rem;
@@ -628,27 +628,7 @@ a.button:active {
           transform: rotate(45deg);
 }
 
-.appearance {
-  visibility: visible !important;
-  opacity: 1 !important;
-  -webkit-transform: scaleY(1) !important;
-          transform: scaleY(1) !important;
-}
-
-.drop__down {
-  z-index: 5;
-  visibility: hidden;
-  opacity: 0;
-  margin: .725rem 0;
-  padding: 1rem 0;
-  border-radius: .875rem;
-  position: absolute;
-  background: #ffffff !important;
-  -webkit-transition: all .275s ease-in-out !important;
-  transition: all .275s ease-in-out !important;
-  -webkit-transform: translateY(20px);
-          transform: translateY(20px);
-  -webkit-box-shadow: 0 0 30px -10px rgba(51, 51, 51, 0.144);
-          box-shadow: 0 0 30px -10px rgba(51, 51, 51, 0.144);
+button#b-submit {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */

@@ -4,7 +4,7 @@
     const s3 = document.querySelector('span[data="3"]')
     const b = document.querySelector('.nav__toggle')
     const nav__navbar = document.querySelector('.nav__navbar')
-    
+
     const user_drop = document.querySelector('#user-drop ')
     const avatar = document.querySelector('.avatar')
     avatar.onclick = () => {
@@ -27,18 +27,29 @@
     }
 
     const dropdown__toggle = document.querySelectorAll('.dropdown__toggle')
-    dropdown__toggle.forEach(x=>x.onclick = function () {
+    dropdown__toggle.forEach(x => x.onclick = function () {
         const drop__containers = x.nextElementSibling
-        
+
         drop__containers.classList.toggle('hidden')
 
     })
     const sub__toggle = document.querySelectorAll('.sub-toggle')
-    sub__toggle.forEach(x=>x.onclick=()=>{
+    sub__toggle.forEach(x => x.onclick = () => {
         const drop__containers = x.firstElementChild
-        
+
         drop__containers.nextElementSibling.classList.toggle('hidden')
 
     })
-
+    const search = document.querySelector('#search-box')
+    const seb = document.querySelector('#b-toggle')
+    const sesubmit = document.querySelector('#b-submit')
+    seb.onclick = () => {
+        if ($(window).width() <= 992) {
+            seb.classList.toggle('ti-close')
+        } else {
+            seb.setAttribute('type', 'submit')
+        }
+        search.classList.toggle('hidden')
+        sesubmit.classList.toggle('hidden')
+    }
 })()

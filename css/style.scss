@@ -1,19 +1,13 @@
-//phân tích thành phần thẻ HTML 
-//tạo frame cho  web
-//viết HTML
-//style
-//responsive
-//add javasript effect 
-//chình sủa thành anime theme
-//design icon , tìm image
-//public
+//read me ! Never try to read my file bc it 's too messy  . I try to make this after learn some html tag and unrelated , basic Css code
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    //reset css
 }
 
 @mixin drop__down {
+    // css for drop down menu
     z-index: 5;
     visibility: hidden;
     opacity: 0;
@@ -21,13 +15,14 @@
     padding: 1rem 0;
     border-radius: .875rem;
     position: absolute;
-    background: #ffffff!important;
+    background: #ffffff !important;
     transition: all .275s ease-in-out !important;
     transform: translateY(20px);
     box-shadow: 0 0 30px -10px rgba(51, 51, 51, 0.144);
 }
 
 @mixin appearance {
+    //hover drop down menu effect
     visibility: visible !important;
     opacity: 1 !important;
     transform: scaleY(1) !important;
@@ -37,6 +32,7 @@
 body {
     background-color: #f5f4f8;
     font-family: 'Inter', sans-serif;
+    //font here
 }
 
 a {
@@ -49,6 +45,7 @@ li {
 }
 
 nav {
+    // set fixed nav
     position: fixed;
     top: 0;
     right: 0;
@@ -66,13 +63,8 @@ nav {
 
     .nav__menu {
         flex-grow: 1;
-
-
         .dropdown__menu {
-
-
             position: relative;
-
             .dropdown__toggle {
                 padding: .3125rem .55rem;
                 font-size: .9rem;
@@ -83,10 +75,6 @@ nav {
                     padding-left: .5rem;
                 }
             }
-
-            // &:hover .drop__containers {
-            //     display: block;
-            // }
             a.ti-more-alt {
                 font-size: 1rem;
                 padding: .3125rem .7rem;
@@ -101,18 +89,18 @@ nav {
             margin-left: 1rem;
             position: relative;
 
-            button.ti-search {
-                padding-left:1rem;
+            button#b-toggle {
+                padding-left: 1rem;
                 position: absolute;
                 background: transparent;
                 border: none;
                 cursor: pointer;
-                
+
             }
 
             input[type="search"] {
                 width: 17.5rem;
-                border: 1px solid #754ffe38;
+                border: 1px solid #754ffe9d;
                 padding: .875rem 1.25rem;
                 padding-left: 2.5rem;
                 border-radius: .3125rem;
@@ -136,7 +124,7 @@ nav {
             margin-left: auto;
 
             .notification {
-            margin-right   :1rem;
+                margin-right: 1rem;
 
                 position: relative;
 
@@ -177,7 +165,6 @@ nav {
 
                     //here -------------
                     .notify-content {
-
                         overflow: auto;
                         height: 300px;
                         width: auto;
@@ -211,7 +198,6 @@ nav {
                                     p {
                                         font-size: .875rem;
                                         font-weight: 300;
-
                                     }
 
                                     span.span--text__wrapper {
@@ -245,7 +231,6 @@ nav {
 
                                     &:hover {
                                         transform: scale(1);
-
                                     }
                                 }
 
@@ -254,7 +239,6 @@ nav {
                                     display: block;
                                     transition: all .34s ease-in-out;
                                     transform: scale(1);
-
                                     transform: rotate(0turn);
                                     cursor: pointer;
                                 }
@@ -262,8 +246,6 @@ nav {
                                 i:hover {
                                     transform: scale(1.2);
                                     transform: rotate(1turn);
-
-
                                 }
                             }
                         }
@@ -384,6 +366,7 @@ nav {
     @include drop__down();
     min-width: 12rem;
     z-index: 1;
+
     li:not(li.drop-header):hover {
         color: #5e3fcb;
         background: #9477fc27;
@@ -399,7 +382,7 @@ nav {
     }
 
     .drop-item {
-    z-index: 3;
+        z-index: 3;
 
         position: relative;
 
@@ -480,6 +463,7 @@ nav {
 }
 
 .sub {
+    // sub menu
     top: -50%;
     left: 100%;
     visibility: hidden !important;
@@ -506,6 +490,7 @@ nav {
 }
 
 .user--header {
+    // user portion header
     display: flex;
     align-items: center;
     flex-direction: row-reverse;
@@ -526,6 +511,7 @@ nav {
 }
 
 .button {
+    //you think it is button tag ? XD nope, that's a anchor link in nav/accounts/admin/
     text-align: center;
     background: #754ffe;
     border: 1px solid #754ffe;
@@ -552,14 +538,16 @@ a.button:active {
 .pad-bot {
     padding-bottom: 1rem !important;
 }
+
 .nav__toggle {
+    //css  bar button toogle main nav mobile and table 
     position: absolute;
     right: 0.5rem;
     min-width: 40px;
     min-height: 40px;
     padding: 0.25rem;
     background: transparent;
-    
+
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -567,7 +555,7 @@ a.button:active {
 
     cursor: pointer;
     border: 1px solid #754ffe;
-    
+
     border-radius: 12.5%;
 
     .stick {
@@ -577,24 +565,25 @@ a.button:active {
         margin: 0.125rem;
         transition: all .225s ease-in-out;
     }
-    
+
 
 }
-.r-45{
-        position: absolute;
-        transform: rotate(-45deg) ;
+
+.r-45 {
+    position: absolute;
+    transform: rotate(-45deg);
 }
-.hide{
+
+.hide {
     opacity: 0;
-    visibility:hidden;
+    visibility: hidden;
 }
-.r45{
-        position: absolute;
-        transform: rotate(45deg);
+
+.r45 {
+    position: absolute;
+    transform: rotate(45deg);
 }
-.appearance{
-    @include appearance();
-}
-.drop__down{
-    @include drop__down();
+
+button#b-submit {
+    display: none;
 }

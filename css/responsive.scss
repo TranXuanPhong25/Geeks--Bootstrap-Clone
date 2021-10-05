@@ -1,41 +1,71 @@
-@media screen and (min-width:992px){
-    button.nav__toggle,.nav__menu--mobile{
+@media screen and (min-width:992px) {
+    button.nav__toggle {
         display: none;
     }
-    
-    
+
+    button#-submit {
+        display: none !important;
+    }
+
 }
-@media screen and (max-width:991px){
-    .user{
+
+@media screen and (max-width:991px) {
+    .user {
         position: absolute;
         right: 3rem;
         margin-right: 0.5rem;
-        
+
 
     }
-    
-    .notification__container{
-        min-width: none!important;
-        width: 100vw!important;
-        right: -100px!important;
+
+    .notification__container {
+        min-width: none !important;
+        right: -100px !important;
     }
-    #user-drop{
-        right: -50px!important;
+
+    #user-drop {
+        right: -50px !important;
 
     }
-    .search-box{
-        button.ti-search {
-            padding: 0 25px!important;
-            border-bottom: 4px solid #754ffe!important;
+
+    .search-box {
+        button#b-toggle {
+            padding: 0 20px !important;
+            margin-left: -25px;
+            border-bottom: 4px solid #754ffe !important;
             cursor: pointer;
             line-height: 53px;
-            background: #754ffe ;
+            background: #754ffe;
         }
-        input{
-            display: none;
+
+        button#b-submit {
+            display: block;
+            background: transparent;
+            border: none;
+            position: fixed;
+            left: .75rem;
+            top: 60px;
+            line-height: 53px;
+            cursor: pointer;
+            padding: 0 20px !important;
+
         }
+
+        input {
+            width: 90% !important;
+            position: fixed;
+            left: 1rem;
+            right: 0;
+            top: 60px;
+            box-shadow: 0 0 20px -8px #18103654;
+            border: 1px solid #754ffe;
+            padding: 1rem 1rem 1rem 2.5rem !important;
+
+        }
+
     }
-    .nav__navbar{
+
+    .nav__navbar {
 
         padding: 1rem 0.75rem;
         position: fixed;
@@ -43,65 +73,90 @@
         left: 0;
         bottom: 0;
         top: 53px;
-        flex-direction:column;
+        flex-direction: column;
         background: #fff;
         transition: all .5s ease-in-out;
-        &>li{
-           
+
+        &>li {
+
             width: 100%;
             margin: .375rem 0;
-            border-bottom: 2px solid #754ffe31!important;
+            border-bottom: 2px solid #754ffe31 !important;
 
         }
+
         // display: none;
         // opacity: 0;
         // visibility: hidden;
     }
-    .notification{
-        margin-right: .5rem!important;
+
+    .notification {
+        margin-right: .5rem !important;
     }
-    .drop__containers:not(#user-drop){
-        min-width: 11rem!important;
+
+    .drop__containers:not(#user-drop) {
+        min-width: 11rem !important;
         position: fixed;
         top: 50px;
-        left:40%;
+        left: 40%;
     }
-    a.dropdown__toggle{
+
+    a.dropdown__toggle {
         position: relative;
         width: 100%;
-        i.ti-angle-down{
-            z-index: -1!important;
+
+        i.ti-angle-down {
+            z-index: -1 !important;
             position: absolute;
             right: .25rem;
-            
+
         }
     }
-    .sub{
-        
-        max-width: 1rem!important;
-        position: fixed!important;
-        top: 0px!important;
-        left: -11rem!important;
 
-        
+    .sub {
+
+        text-align: right;
+        position: fixed !important;
+        top: 0px !important;
+        left: -11rem !important;
+
+
     }
-    .active{
-        display: block!important;
+
+    .active {
+        display: block !important;
         opacity: 1;
         visibility: visible;
     }
-    .hidden{
-        display: none!important;
+
+    .hidden {
+        display: none !important;
     }
 
 
 
 }
-@media screen and (max-width:640px){
+
+@media screen and (max-width:550px) {
     nav {
-        padding: 0.625rem 0.5rem; 
+        padding: 0.625rem 0.5rem;
+    }
+
+    .notification__container {
+        min-width: none !important;
+        width: 100vw !important;
+        right: -109px !important;
     }
 }
-@media screen and (max-width:380px){
 
+@media screen and (max-width:380px) {
+    .nav__logo {
+        transform: scale(0.8);
+        margin-left: -16px;
+    }
+
+    button#b-toggle {
+        margin-left: -35px !important;
+
+    }
 }

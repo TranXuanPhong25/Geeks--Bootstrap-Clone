@@ -1,6 +1,9 @@
 @media screen and (min-width: 992px) {
-  button.nav__toggle, .nav__menu--mobile {
+  button.nav__toggle {
     display: none;
+  }
+  button#-submit {
+    display: none !important;
   }
 }
 
@@ -12,21 +15,40 @@
   }
   .notification__container {
     min-width: none !important;
-    width: 100vw !important;
     right: -100px !important;
   }
   #user-drop {
     right: -50px !important;
   }
-  .search-box button.ti-search {
-    padding: 0 25px !important;
+  .search-box button#b-toggle {
+    padding: 0 20px !important;
+    margin-left: -25px;
     border-bottom: 4px solid #754ffe !important;
     cursor: pointer;
     line-height: 53px;
     background: #754ffe;
   }
+  .search-box button#b-submit {
+    display: block;
+    background: transparent;
+    border: none;
+    position: fixed;
+    left: .75rem;
+    top: 60px;
+    line-height: 53px;
+    cursor: pointer;
+    padding: 0 20px !important;
+  }
   .search-box input {
-    display: none;
+    width: 90% !important;
+    position: fixed;
+    left: 1rem;
+    right: 0;
+    top: 60px;
+    -webkit-box-shadow: 0 0 20px -8px #18103654;
+            box-shadow: 0 0 20px -8px #18103654;
+    border: 1px solid #754ffe;
+    padding: 1rem 1rem 1rem 2.5rem !important;
   }
   .nav__navbar {
     padding: 1rem 0.75rem;
@@ -49,7 +71,7 @@
     border-bottom: 2px solid #754ffe31 !important;
   }
   .notification {
-    margin-right: 0.5rem !important;
+    margin-right: .5rem !important;
   }
   .drop__containers:not(#user-drop) {
     min-width: 11rem !important;
@@ -67,7 +89,7 @@
     right: .25rem;
   }
   .sub {
-    max-width: 1rem !important;
+    text-align: right;
     position: fixed !important;
     top: 0px !important;
     left: -11rem !important;
@@ -82,9 +104,25 @@
   }
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 550px) {
   nav {
     padding: 0.625rem 0.5rem;
+  }
+  .notification__container {
+    min-width: none !important;
+    width: 100vw !important;
+    right: -109px !important;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .nav__logo {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    margin-left: -16px;
+  }
+  button#b-toggle {
+    margin-left: -35px !important;
   }
 }
 /*# sourceMappingURL=responsive.css.map */
