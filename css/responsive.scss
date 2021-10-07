@@ -188,7 +188,18 @@
         margin-bottom: 1.75rem !important;
     }
     
-    
+    footer{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        ul{
+            margin-top: .5rem !important; 
+            li{
+                padding:0 1rem;
+                margin: 0!important;
+            }
+        }
+    }
 }
 
 @media (max-width:600px) {
