@@ -1,3 +1,14 @@
+@media (max-width:1200px) {
+    .grid {
+        max-width: 960px;
+    }
+
+    .col-1 {
+        width: 50% !important;
+        ;
+    }
+}
+
 @media screen and (min-width:992px) {
     button.nav__toggle {
         display: none;
@@ -114,7 +125,7 @@
     }
 
     .sub {
-        max-width: 8rem!important;
+        max-width: 8rem !important;
         text-align: right;
         position: fixed !important;
         top: 0px !important;
@@ -133,12 +144,72 @@
         display: none !important;
     }
 
+    .grid {
+        max-width: 720px;
+    }
 
-    // *{
-    //     &:hover {
+    .col-1 {
+        padding-top: 2.5rem;
+        width: 100% !important;
+    }
 
-    //     }
-    // }
+    .col-2 {
+        padding-top: 2.5rem;
+        margin: 0 auto;
+        width: 80% !important;
+
+
+    }
+
+    .info-items {
+        margin-bottom: 1rem !important;
+    }
+}
+
+@media (max-width:770px) {
+    .grid {
+        max-width: 540px;
+    }
+
+    .col-2 {
+        padding-top: 2.5rem;
+        margin: 0 auto;
+        width: 100% !important;
+
+
+    }
+
+    .info-items {
+        width: 100%;
+    }
+
+    .col-1>p {
+
+        margin-bottom: 1.75rem !important;
+    }
+    
+    
+}
+
+@media (max-width:600px) {
+    .hero {
+        padding: 0 1rem;
+    }
+
+    .info-items {
+        padding: 0 1rem;
+
+    }
+
+    .slideshow-container {
+        padding: 0 1rem;
+    }
+    .next{
+        right: 1rem;
+    }
+    .carou-title{
+        margin-left: 1rem;
+    }
 }
 
 @media screen and (max-width:550px) {
@@ -148,18 +219,24 @@
 
     .notification__container {
         min-width: none !important;
-        width: 100vw !important;
+        width: 96vw !important;
         right: -109px !important;
     }
-    .drop-list{
-        min-width: 11rem!important;
+
+    .drop-list {
+        min-width: 11rem !important;
     }
+
 }
 
 @media screen and (max-width:380px) {
     .nav__logo {
         transform: scale(0.8);
         margin-left: -16px;
+    }
+
+    .btn-1 {
+        margin-bottom: .5rem;
     }
 
     button#b-toggle {

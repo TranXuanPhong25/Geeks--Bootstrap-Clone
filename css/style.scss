@@ -31,7 +31,6 @@
 }
 
 body {
-    background-color: #f5f4f8;
     font-family: 'Inter', sans-serif;
     //font here
 }
@@ -535,7 +534,10 @@ a.button:active {
 .pad-top {
     padding-top: 1rem !important;
 }
+.pad-top-5{
+    padding-top: 5rem !important;
 
+}
 .pad-bot {
     padding-bottom: 1rem !important;
 }
